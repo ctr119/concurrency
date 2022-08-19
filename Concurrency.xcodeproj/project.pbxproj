@@ -14,6 +14,11 @@
 		3E8778A928AE779B00097D46 /* ConcurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8778A828AE779B00097D46 /* ConcurrencyTests.swift */; };
 		3E8778B328AE779B00097D46 /* ConcurrencyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8778B228AE779B00097D46 /* ConcurrencyUITests.swift */; };
 		3E8778B528AE779C00097D46 /* ConcurrencyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8778B428AE779C00097D46 /* ConcurrencyUITestsLaunchTests.swift */; };
+		3E8778C228AE77C700097D46 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8778C128AE77C700097D46 /* Table.swift */; };
+		3E8778C428AF9B6700097D46 /* SmokersExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8778C328AF9B6700097D46 /* SmokersExercise.swift */; };
+		3EB3250928B02669008E3A5D /* Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3250828B02669008E3A5D /* Ingredients.swift */; };
+		3EB3250B28B02685008E3A5D /* Agent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3250A28B02685008E3A5D /* Agent.swift */; };
+		3EB3250D28B026A3008E3A5D /* Smoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3250C28B026A3008E3A5D /* Smoker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		3E8778AE28AE779B00097D46 /* ConcurrencyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConcurrencyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E8778B228AE779B00097D46 /* ConcurrencyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyUITests.swift; sourceTree = "<group>"; };
 		3E8778B428AE779C00097D46 /* ConcurrencyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3E8778C128AE77C700097D46 /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
+		3E8778C328AF9B6700097D46 /* SmokersExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokersExercise.swift; sourceTree = "<group>"; };
+		3EB3250828B02669008E3A5D /* Ingredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredients.swift; sourceTree = "<group>"; };
+		3EB3250A28B02685008E3A5D /* Agent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agent.swift; sourceTree = "<group>"; };
+		3EB3250C28B026A3008E3A5D /* Smoker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smoker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +104,7 @@
 		3E87789628AE779A00097D46 /* Concurrency */ = {
 			isa = PBXGroup;
 			children = (
+				3EB3250728B0264A008E3A5D /* Smokers */,
 				3E87789728AE779A00097D46 /* ConcurrencyApp.swift */,
 				3E87789928AE779A00097D46 /* ContentView.swift */,
 				3E87789B28AE779B00097D46 /* Assets.xcassets */,
@@ -125,6 +136,26 @@
 				3E8778B428AE779C00097D46 /* ConcurrencyUITestsLaunchTests.swift */,
 			);
 			path = ConcurrencyUITests;
+			sourceTree = "<group>";
+		};
+		3EB3250728B0264A008E3A5D /* Smokers */ = {
+			isa = PBXGroup;
+			children = (
+				3E8778C328AF9B6700097D46 /* SmokersExercise.swift */,
+				3EB3250E28B02741008E3A5D /* Entities */,
+			);
+			path = Smokers;
+			sourceTree = "<group>";
+		};
+		3EB3250E28B02741008E3A5D /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				3EB3250A28B02685008E3A5D /* Agent.swift */,
+				3EB3250828B02669008E3A5D /* Ingredients.swift */,
+				3EB3250C28B026A3008E3A5D /* Smoker.swift */,
+				3E8778C128AE77C700097D46 /* Table.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +288,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E8778C428AF9B6700097D46 /* SmokersExercise.swift in Sources */,
+				3E8778C228AE77C700097D46 /* Table.swift in Sources */,
 				3E87789A28AE779A00097D46 /* ContentView.swift in Sources */,
+				3EB3250B28B02685008E3A5D /* Agent.swift in Sources */,
+				3EB3250928B02669008E3A5D /* Ingredients.swift in Sources */,
+				3EB3250D28B026A3008E3A5D /* Smoker.swift in Sources */,
 				3E87789828AE779A00097D46 /* ConcurrencyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

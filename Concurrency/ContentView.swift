@@ -1,16 +1,12 @@
-//
-//  ContentView.swift
-//  Concurrency
-//
-//  Created by Barrios, Victor on 18/8/22.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
         Text("Hello, world!")
             .padding()
+            .onAppear {
+                SmokerExercise().run()
+            }
     }
 }
 
