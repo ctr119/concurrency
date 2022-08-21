@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E5A2C1228B247090044B138 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A2C1128B247090044B138 /* Customer.swift */; };
+		3E5A2C1428B247C30044B138 /* BarberShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A2C1328B247C30044B138 /* BarberShop.swift */; };
+		3E5A2C1628B24A790044B138 /* Barber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A2C1528B24A790044B138 /* Barber.swift */; };
 		3E87789828AE779A00097D46 /* ConcurrencyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E87789728AE779A00097D46 /* ConcurrencyApp.swift */; };
 		3E87789A28AE779A00097D46 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E87789928AE779A00097D46 /* ContentView.swift */; };
 		3E87789C28AE779B00097D46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E87789B28AE779B00097D46 /* Assets.xcassets */; };
@@ -39,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E5A2C1128B247090044B138 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		3E5A2C1328B247C30044B138 /* BarberShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberShop.swift; sourceTree = "<group>"; };
+		3E5A2C1528B24A790044B138 /* Barber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Barber.swift; sourceTree = "<group>"; };
 		3E87789428AE779A00097D46 /* Concurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Concurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E87789728AE779A00097D46 /* ConcurrencyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyApp.swift; sourceTree = "<group>"; };
 		3E87789928AE779A00097D46 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,6 +87,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E5A2C1028B23F2C0044B138 /* BarberShop */ = {
+			isa = PBXGroup;
+			children = (
+				3E5A2C1528B24A790044B138 /* Barber.swift */,
+				3E5A2C1328B247C30044B138 /* BarberShop.swift */,
+				3E5A2C1128B247090044B138 /* Customer.swift */,
+			);
+			path = BarberShop;
+			sourceTree = "<group>";
+		};
 		3E87788B28AE779A00097D46 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +120,7 @@
 		3E87789628AE779A00097D46 /* Concurrency */ = {
 			isa = PBXGroup;
 			children = (
+				3E5A2C1028B23F2C0044B138 /* BarberShop */,
 				3EB3250728B0264A008E3A5D /* Smokers */,
 				3E87789728AE779A00097D46 /* ConcurrencyApp.swift */,
 				3E87789928AE779A00097D46 /* ContentView.swift */,
@@ -289,12 +306,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E8778C428AF9B6700097D46 /* SmokersExercise.swift in Sources */,
+				3E5A2C1428B247C30044B138 /* BarberShop.swift in Sources */,
 				3E8778C228AE77C700097D46 /* Table.swift in Sources */,
 				3E87789A28AE779A00097D46 /* ContentView.swift in Sources */,
+				3E5A2C1228B247090044B138 /* Customer.swift in Sources */,
 				3EB3250B28B02685008E3A5D /* Agent.swift in Sources */,
 				3EB3250928B02669008E3A5D /* Ingredients.swift in Sources */,
 				3EB3250D28B026A3008E3A5D /* Smoker.swift in Sources */,
 				3E87789828AE779A00097D46 /* ConcurrencyApp.swift in Sources */,
+				3E5A2C1628B24A790044B138 /* Barber.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
