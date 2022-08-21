@@ -2,19 +2,19 @@ import Foundation
 
 actor BarberShop {
     private let numberOfSeats = 5
-    private var freeSeats = 5
+    private var seats: [Customer] = []
     
-    func takeASit() -> Bool {
-        if freeSeats <= numberOfSeats && freeSeats > 0 {
-            freeSeats -= 1
+    func takeASit(_ customer: Customer) -> Bool {
+        if seats.count < numberOfSeats {
+            seats.append(customer)
             return true
         }
         return false
     }
     
-    func releaseASit() {
-        if freeSeats < numberOfSeats {
-            freeSeats += 1
+    func releaseASit(_ customer: Customer) {
+        if let index = seats.firstIndex(where: { $0 == customer }) {
+            seats.remove(at: index)
         }
     }
 }
