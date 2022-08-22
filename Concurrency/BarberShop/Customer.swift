@@ -7,10 +7,9 @@ struct Customer {
     
     func enterTheBarberShop() async {
         log(message: "ENTERS the shop")
-        let isWaiting = await shop.takeASit(self)
         
-        while(isWaiting) {
-            
+        if await shop.takeASit(self) {
+            await barber.awake(by: self)
         }
         
         await shop.releaseASit(self)
@@ -25,5 +24,11 @@ struct Customer {
 extension Customer: Equatable {
     static func == (lhs: Customer, rhs: Customer) -> Bool {
         lhs.name == rhs.name
+    }
+}
+
+extension Customer: CustomStringConvertible {
+    var description: String {
+        name
     }
 }
