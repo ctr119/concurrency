@@ -9,7 +9,9 @@ struct Customer {
         log(message: "ENTERS the shop")
         
         if await shop.takeASit(self) {
-            await barber.awake(by: self)
+            while(await barber.awake(by: self) == .wait) {
+                // Wait
+            }
         }
         
         await shop.releaseASit(self)

@@ -5,7 +5,7 @@ struct ContentView: View {
         Text("Hello, world!")
             .padding()
             .onAppear {
-                SmokerExercise().run()
+                BarberShopExercise().run()
             }
     }
 }

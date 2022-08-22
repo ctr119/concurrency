@@ -11,7 +11,7 @@ actor BarberShop {
         
         if seats.count < numberOfSeats {
             seats.append(customer)
-            printSeats(extraMessage: "New Customer has arrived: \(customer)")
+            printSeats(extraMessage: "New Customer takes a sit: \(customer)")
             return true
         }
         
@@ -20,8 +20,8 @@ actor BarberShop {
     
     func releaseASit(_ customer: Customer) {
         if let index = seats.firstIndex(where: { $0 == customer }) {
-            printSeats(extraMessage: "\(customer) leaves")
             seats.remove(at: index)
+            printSeats(extraMessage: "\(customer) releases a sit")
         }
     }
     
@@ -32,7 +32,7 @@ actor BarberShop {
         print("\(prefix) - \(seats) -")
     }
     
-    func areThereMoreCustomers() -> Bool {
-        seats.count > 0
+    func getNextCustomer() -> Customer? {
+        seats.count > 0 ? seats[0] : nil
     }
 }
