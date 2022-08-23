@@ -1,7 +1,7 @@
 import Foundation
 
 actor Barber {
-    enum Order {
+    enum Instruction {
         case wait
         case pass
     }
@@ -12,7 +12,7 @@ actor Barber {
         self.barberShop = barberShop
     }
     
-    func awake(by customer: Customer) async -> Order {
+    func awake(by customer: Customer) async -> Instruction {
         guard let nextCustomer = await barberShop.getNextCustomer(),
               nextCustomer == customer else { return .wait }
         

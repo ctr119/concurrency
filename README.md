@@ -5,10 +5,10 @@ Exploring Concurrency using async/await by implementing classic exercises.
 ## Exercises so far
 
 - Smokers ✅
+- Barbershop ✅
 
 ## TODO list
 
-- Barbershop
 - Philosophers
 
 ## Docu

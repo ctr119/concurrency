@@ -28,8 +28,7 @@ actor BarberShop {
     private func printSeats(extraMessage: String) {
         let prefix = "[Shop]"
         
-        print("\(prefix) \(extraMessage)")
-        print("\(prefix) - \(seats) -")
+        print("\(prefix) \(extraMessage)\n\tSeats: \(seats)")
     }
     
     func getNextCustomer() -> Customer? {

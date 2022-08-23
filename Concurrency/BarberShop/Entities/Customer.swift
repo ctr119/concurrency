@@ -19,7 +19,7 @@ struct Customer {
     }
     
     private func log(message: String) {
-        print("[\(name)] \(message)")
+        print("[\(name.uppercased())] \(message)")
     }
 }
 
